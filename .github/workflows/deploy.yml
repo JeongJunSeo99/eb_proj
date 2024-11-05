@@ -49,13 +49,13 @@ jobs:
         shell: bash
 
       - name: ChatGPT CodeReviewer
-        uses: anc95/ChatGPT-CodeReview@v1.0.14
+        uses: anc95/ChatGPT-CodeReview@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
           # Optional
-          LANGUAGE: Korean
+          LANGUAGE: Korea
           OPENAI_API_ENDPOINT: https://api.openai.com/v1
           MODEL: gpt-3.5-turbo # https://platform.openai.com/docs/models
           PROMPT: Please check if there are any confusions or irregularities in the following code diff
